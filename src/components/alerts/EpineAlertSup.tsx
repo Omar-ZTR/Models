@@ -15,6 +15,7 @@ function EpineAlertSup({closeModal }: ModelProps){
                         type="button"
                         className="cancel-button"
                         onClick={closeModal}
+                        
 
                     >
                         Cancel
