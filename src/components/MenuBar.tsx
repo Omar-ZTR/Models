@@ -8,6 +8,14 @@ import ECG from "./ECG";
 import ReversibleCauses from "./ReversibleCauses";
 import AddClinicalNotes from "./AddClinicalNotes";
 import EpineAlertSup from "./alerts/EpineAlertSup";
+import EpineAlertInf from "./alerts/EpineAlertInf";
+import RhytmeAlertSup from "./alerts/RhytmeAlertSup";
+import RhytmeAlertInf from "./alerts/RhytmeAlertInf";
+// import RhytmeAlertProceed from "./alerts/RhytmeAlertProceed";
+import AmiodaroneAlert from "./alerts/AmiodaroneAlert";
+import ShockAlert from "./alerts/ShockAlert";
+import EditBtnAmiodarone from "./buttonsEdit/EditBtnAmiodarone";
+import EditRhythm from "./buttonsEdit/EditRhythm";
 
 
 export interface ModelProps {
@@ -39,7 +47,17 @@ function MenuBar() {
       <ul className="form-group">
         <div>Alerts</div>
         <li onClick={() => openModal("episup")}>epi Sup 3</li>
+        <li onClick={() => openModal("epiinf")}>epi inf 3</li>
+        <li onClick={() => openModal("rhytmesup")}>rhytme Sup 2</li>
+        <li onClick={() => openModal("rhytmeinf")}>rhytme inf 2</li>
        
+        <li onClick={() => openModal("amiodarone")}>Amiodarone</li>
+        <li onClick={() => openModal("shock")}>shock</li>
+ <li onClick={() => openModal("edit1")}>edit1</li>
+ <li onClick={() => openModal("edit2")}>edit2</li>
+
+
+
       </ul>
     
       {activeModal === "patientDetails" && <Model1 closeModal={closeModal} />}
@@ -53,6 +71,15 @@ function MenuBar() {
       {/* Alerts */}
 
       {activeModal === "episup" && <EpineAlertSup closeModal={closeModal} />}
+      {activeModal === "epiinf" && <EpineAlertInf closeModal={closeModal} />}
+      {activeModal === "rhytmesup" && <RhytmeAlertSup closeModal={closeModal} />}
+      {activeModal === "rhytmeinf" && <RhytmeAlertInf closeModal={closeModal} />}
+      {activeModal === "edit1" && <EditBtnAmiodarone closeModal={closeModal} />}
+      {activeModal === "edit2" && <EditRhythm closeModal={closeModal} />}
+
+      
+      {activeModal === "amiodarone" && <AmiodaroneAlert closeModal={closeModal} />}
+      {activeModal === "shock" && <ShockAlert closeModal={closeModal} />}
 
 
     </div>

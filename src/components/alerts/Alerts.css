@@ -1,0 +1,56 @@
+.buttonContainer {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .boxs{
+    background-color: transparent;
+    border: 1px solid black !important;
+  }
+  .boxC {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+   
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .btn-radio{
+    display: none;
+  }
+  input[type=radio]:checked~div {
+    background-color: #00a6c9;
+  }
+  .yes-button {
+    background-color: #bff36a;
+  }
+  
+  .yes-button:hover {
+    background-color: #84cc16;
+  }
+  
+  .no-button {
+    background-color: #f87171;
+  }
+  
+  .no-button:hover {
+    background-color: #ef4444;
+  }
+  .icon{
+    font-size: 45px;
+  }
+
+  .yes-proceed{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }

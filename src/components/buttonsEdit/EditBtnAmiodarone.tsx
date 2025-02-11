@@ -1,37 +1,33 @@
 import { ModelProps } from "../MenuBar";
 
-function AmiodaroneAlert({ closeModal }: ModelProps) {
+function EditBtnAmiodarone({ closeModal }: ModelProps) {
   return (
     <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
       <div
         className="add-patient-form"
         style={{ padding: "10px 20px", minWidth: "30%" }}
       >
-        <h2 className="add-new-patient-form-title">Amiodarone</h2>
+        <h2 className="add-new-patient-form-title">Edit</h2>
 
         <div className="yes-proceed">
-          <label htmlFor="procedure"> Route</label>
-          <select
-            id="procedure"
-            name="procedure"
-           
-            style={{ width: "50%" }}
-          >
+          <label htmlFor="time"> Time</label>
+          <select id="time" name="time" style={{ width: "50%" }}>
             <option value=" "></option>
           </select>
           <label htmlFor="dose">Dose</label>
-          <input
-            type="number"
-            id="dose"
-            name="dose"
-            style={{ width: "43%" }}
-           
-          />
+          <input type="number" id="dose" name="dose" style={{ width: "43%" }} />
+       
+          <label htmlFor="route">Route</label>
+        <input
+          type="number"
+          id="route"
+          name="route"
+          style={{ width: "43%" }}
+         
+        />
+       
         </div>
-        <div
-          className="button-container"
-          
-        >
+        <div className="button-container">
           <button type="button" className="cancel-button" onClick={closeModal}>
             Cancel
           </button>
@@ -44,4 +40,4 @@ function AmiodaroneAlert({ closeModal }: ModelProps) {
   );
 }
 
-export default AmiodaroneAlert;
+export default EditBtnAmiodarone;
