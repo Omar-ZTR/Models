@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { ModelProps } from "../MenuBar";
 import RhytmeAlertProceed from "./RhytmeAlertProceed";
+import "./Alerts.css";
 
 function RhytmeAlertSup({ closeModal }: ModelProps) {
    const [showProceedModal, setShowProceedModal] = useState(false);
    return (
      <>
        {!showProceedModal ? (
-    <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
+    <div className="form-alert" >
       <div
-        className="add-patient-form"
+        className="centent-alert"
         style={{ padding: "10px 20px", minWidth: "30%" }}
       >
-        <h2 className="add-new-patient-form-title">Rhythm Check</h2>
+        <h2 className="alert-form-title">Rhythm Check</h2>
         <div
               style={{
                 textAlign: "start",

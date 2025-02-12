@@ -1,13 +1,14 @@
 import { ModelProps } from "../MenuBar";
+import "./Alerts.css";
 
 function ShockAlert({ closeModal }: ModelProps) {
   return (
-    <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
+    <div className="form-alert" >
       <div
-        className="add-patient-form"
+        className="centent-alert"
         style={{ padding: "10px 20px", minWidth: "30%" }}
       >
-        <h2 className="add-new-patient-form-title">Defibrillation</h2>
+        <h2 className="alert-form-title">Defibrillation</h2>
 
         <h3> Click "Proceed" to record a shock has been delivered.</h3>
         <div

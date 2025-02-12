@@ -35,9 +35,9 @@ const ReversibleCauses: React.FC<ModelProps> = ({ closeModal })=> {
     };
 
     return (
-        <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
-            <div className="add-patient-form">
-                <h2 className="add-new-patient-form-title">Reversible causes</h2>
+        <div className="form-modal" >
+            <div className="centent-modal">
+                <h2 className="modal-form-title">Reversible causes</h2>
 
                 <form className="form-grid">
                     <div> Please ensure all reversible causes has been checked</div>
@@ -80,7 +80,7 @@ const ReversibleCauses: React.FC<ModelProps> = ({ closeModal })=> {
 
 
 
-                    <label className="custom-checkbox" style={{
+                     <label className="custom-checkbox" style={{
 
                         fontWeight: 500,
 
@@ -94,7 +94,7 @@ const ReversibleCauses: React.FC<ModelProps> = ({ closeModal })=> {
                         <span className="checkmark"></span>
                         All reversible causes have been checked
                     </label>
-                    <label htmlFor="comment" style={{
+                   <label htmlFor="comment" style={{
                         fontSize: 16,
                         fontWeight: 500,
                         lineHeight: "0px",

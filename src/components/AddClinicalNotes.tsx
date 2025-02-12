@@ -4,9 +4,9 @@ import "./VbgAbg.css"
 function AddClinicalNotes({ closeModal }: ModelProps) {
 
     return (
-        <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
-            <div className="add-patient-form" style={{ width: "90%" }} >
-                <h2 className="add-new-patient-form-title">Add Clinical Notes</h2>
+        <div className="form-modal" >
+            <div className="centent-modal" style={{ width: "90%" }} >
+                <h2 className="modal-form-title">Add Clinical Notes</h2>
 
                 <form className="form-grid" style={{gap:"10px"}}>
 
@@ -20,7 +20,7 @@ function AddClinicalNotes({ closeModal }: ModelProps) {
                                 placeholder=""
                                 required
                                 style={{
-                                    width: "49%",
+                                   
 
                                     border: "1px solid #37b7c3",
                                     borderRadius: "30px",
@@ -45,7 +45,7 @@ function AddClinicalNotes({ closeModal }: ModelProps) {
                                 placeholder=""
                                 required
                                 style={{
-                                    width: "100%",
+                                  
 
                                     border: "1px solid #37b7c3",
                                     borderRadius: "30px",
@@ -65,7 +65,7 @@ function AddClinicalNotes({ closeModal }: ModelProps) {
                                 placeholder=""
                                 required
                                 style={{
-                                    width: "100%",
+                                  
 
                                     border: "1px solid #37b7c3",
                                     borderRadius: "30px",
@@ -86,7 +86,7 @@ function AddClinicalNotes({ closeModal }: ModelProps) {
 
                             rows={4} 
                             cols={50}
-                            style={{width:"100%",minHeight:"300px",maxWidth:"100%", resize: "vertical" }} 
+                            style={{minHeight:"300px",maxWidth:"100%", resize: "vertical" }} 
                         ></textarea>
                         
                 </form>

@@ -1,4 +1,4 @@
-.add-patient-form-modal {
+.form-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.add-patient-form {
+.centent-modal {
   background-color: #fff;
   border-radius: 8px;
   width: 90%; 
@@ -21,7 +21,7 @@
   border: 1px solid black;
 }
 
-.add-new-patient-form-title {
+.modal-form-title {
   font-size: 28px; 
   font-weight: bold;
   text-align: center;
@@ -125,7 +125,7 @@ label {
 
 
 @media (max-width: 768px) {
-  .add-new-patient-form-title {
+  .modal-form-title {
     font-size: 24px;
     margin-bottom: 20px;
   }
@@ -156,7 +156,7 @@ label {
 }
 
 @media (max-width: 480px) {
-  .add-new-patient-form-title {
+  .modal-form-title {
     font-size: 20px;
     margin-bottom: 15px;
   }

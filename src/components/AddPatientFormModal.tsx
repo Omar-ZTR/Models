@@ -27,9 +27,9 @@ const AddPatientFormModal: React.FC<AddPatientFormModalProps> = ({
   };
 
   return (
-    <div className="add-patient-form-modal">
-      <div className="add-patient-form">
-        <h2 className="add-new-patient-form-title">Patient details</h2>
+    <div className="form-modal">
+      <div className="centent-modal">
+        <h2 className="modal-form-title">Patient details</h2>
         <form className="form-grid">
           <div className="form-column">
             <div className="form-group design-1">

@@ -18,9 +18,9 @@ function VbgAbg ({closeModal }: ModelProps){
         }
     };
     return (
-        <div className="add-patient-form-modal" style={showForm !== "manually" ? { alignItems: "center" } : {}}>
-            <div className="add-patient-form" style={showForm == "manually" ? { margin: "15% 0px 10px 0" } : {}}>
-                <h2 className="add-new-patient-form-title">VBG/ABG</h2>
+        <div className="form-modal" style={showForm !== "manually" ? { alignItems: "center" } : {}}>
+            <div className="centent-modal">
+                <h2 className="modal-form-title">VBG/ABG</h2>
                 <form className="form-grid">
                     <div className="form-column">
                         {!showForm && (<div>

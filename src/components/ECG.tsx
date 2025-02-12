@@ -15,9 +15,9 @@ function ECG({ closeModal }: ModelProps) {
         }
     };
     return (
-        <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
-            <div className="add-patient-form" >
-                <h2 className="add-new-patient-form-title">EGC</h2>
+        <div className="form-modal" style={{alignItems:"center"}} >
+            <div className="centent-modal" >
+                <h2 className="modal-form-title">EGC</h2>
                 <form className="form-grid">
                     <div className="form-column">
 

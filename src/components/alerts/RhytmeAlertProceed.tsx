@@ -6,9 +6,9 @@ function RhytmeAlertProceed() {
   const [selected, setSelected] = useState<string | null>(null);
   const [showForm, setShowForm] = useState<string>("");
   return (
-    <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
+    <div className="form-alert" >
       <div
-        className="add-patient-form"
+        className="centent-alert"
         style={{ padding: "10px 20px", minWidth: "30%" }}
       >
         {!showForm && (

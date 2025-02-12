@@ -74,7 +74,9 @@
   transition: .5s ease;
   text-wrap: nowrap;
 }
-
+.Cause input:hover + div{
+  background-color: #5ad1e9;
+}
 .Cause input {
   position: absolute;
   top: 0;
@@ -109,11 +111,13 @@ input[type=checkbox]:checked~div {
   display: flex;
   align-items: center;
   border: 2px solid #00a6c9;
- width: max-content;
+  width: fit-content;
   border-radius: 6px;
   padding: 10px;
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  text-wrap: wrap;
+  line-height: 16px;
+  
 }
 
 .custom-checkbox input {
@@ -137,7 +141,7 @@ input[type=checkbox]:checked~div {
  
 }
 
-.add-patient-form-modal {
+.form-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -148,21 +152,23 @@ input[type=checkbox]:checked~div {
   justify-content: center;
   overflow: auto;
   z-index: 1000;
+  align-items: flex-start;
 }
 
-.add-patient-form {
+.centent-modal {
   background-color: #fff;
   border-radius: 8px;
   width:fit-content;
   max-width: 1023px;
   height: fit-content;
   padding: 0px 20px 20px 66px;
+  margin: 3% 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid black;
 
 }
 
-.add-new-patient-form-title {
+.modal-form-title {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
@@ -234,6 +240,7 @@ label {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-wrap: nowrap;
 }
 
 .cancel-button {
@@ -268,11 +275,13 @@ label {
 
 
 @media (max-width: 768px) {
-  .add-new-patient-form-title {
+  .modal-form-title {
     font-size: 24px;
     margin-bottom: 20px;
   }
-
+.centent-modal{
+  padding: 0px 20px 20px;
+}
   .form-grid {
     flex-direction: column;
     gap: 15px;
@@ -299,15 +308,23 @@ label {
 }
 
 @media (max-width: 480px) {
-  .add-new-patient-form-title {
+  .modal-form-title {
     font-size: 20px;
     margin-bottom: 15px;
   }
+.Cause , .Cause input{
+ height: 30px;
+ font-size: 13px;
+ font-weight: 600;
+}
 
   .form-column {
-    padding: 5px;
+    gap: 5px;
+    flex-direction: column;
   }
-
+  .form-grid {
+  
+    margin-right: 0}
   label {
     font-size: 14px;
   }

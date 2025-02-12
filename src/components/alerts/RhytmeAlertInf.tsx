@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ModelProps } from "../MenuBar";
 import RhytmeAlertProceed from "./RhytmeAlertProceed";
+import "./Alerts.css";
 
 function RhytmeAlertInf({ closeModal }: ModelProps) {
   const [showProceedModal, setShowProceedModal] = useState(false);
@@ -8,28 +9,32 @@ function RhytmeAlertInf({ closeModal }: ModelProps) {
     <>
       {!showProceedModal ? (
         <div
-          className="add-patient-form-modal"
-          style={{ alignItems: "center" }}
+          className="form-alert"
+          
         >
           <div
-            className="add-patient-form"
+            className="centent-alert"
             style={{ padding: "10px 20px", minWidth: "30%" }}
           >
-            <h2 className="add-new-patient-form-title">Rhythm Check</h2>
+            <h2 className="alert-form-title">Rhythm Check</h2>
             <div
               style={{
                 textAlign: "start",
                 fontSize: "16px",
                 fontWeight: "600",
-                marginBottom: "40px",
+                marginBottom: "20px",
               }}
             >
-              <div>
+              <div style={{
+                marginBottom: "5px",
+              }} >
                 {" "}
                 Last Epinephrine dose has been given less than 2 minutes ago.{" "}
               </div>
 
-              <div> Do you still want to proceed? </div>
+              <div style={{
+                marginBottom: "5px",
+              }} > Do you still want to proceed? </div>
             </div>
 
             <div

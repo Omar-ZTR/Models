@@ -33,7 +33,7 @@ function MenuBar() {
     setActiveModal(null);
   };
   return (
-    <div className="form-column" style={{padding:"50px"}}>
+    <div className="form-column" >
       <ul className="form-group">
         <div>Models</div>
         <li onClick={() => openModal("patientDetails")}>Patient Details</li>

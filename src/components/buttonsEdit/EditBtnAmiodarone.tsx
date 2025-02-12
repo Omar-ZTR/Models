@@ -1,17 +1,18 @@
 import { ModelProps } from "../MenuBar";
+import "../alerts/Alerts.css";
 
 function EditBtnAmiodarone({ closeModal }: ModelProps) {
   return (
-    <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
+    <div className="form-alert" >
       <div
-        className="add-patient-form"
-        style={{ padding: "10px 20px", minWidth: "30%" }}
+        className="centent-alert"
+       
       >
-        <h2 className="add-new-patient-form-title">Edit</h2>
+        <h2 className="alert-form-title">Edit</h2>
 
         <div className="yes-proceed">
           <label htmlFor="time"> Time</label>
-          <select id="time" name="time" style={{ width: "50%" }}>
+          <select id="time" name="time" style={{ width: "55%" }}>
             <option value=" "></option>
           </select>
           <label htmlFor="dose">Dose</label>

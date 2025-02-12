@@ -6,9 +6,9 @@ import { ModelProps } from './MenuBar';
 
 export default function Model1({ closeModal }: ModelProps) {
   return (
-    <div className="add-patient-form-modal">
-    <div className="add-patient-form" style={{width:"90%"}}>
-      <h2 className="add-new-patient-form-title">Patient details</h2>
+    <div className="form-modal" >
+    <div className="centent-modal" style={{width:"90%"}}>
+      <h2 className="modal-form-title">Patient details</h2>
       <form className="form-grid" style={{flexDirection:"row"}}>
         <div className="form-column" style={{flexDirection:"column"}}>
           <div className="form-group design-1">

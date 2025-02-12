@@ -1,13 +1,14 @@
 import { ModelProps } from "../MenuBar";
+import "./Alerts.css";
 
 function EpineAlertSup({ closeModal }: ModelProps) {
   return (
-    <div className="add-patient-form-modal" style={{ alignItems: "center" }}>
+    <div className="form-alert" >
       <div
-        className="add-patient-form"
+        className="centent-alert"
         style={{ padding: "10px 20px", minWidth: "30%" }}
       >
-        <h2 className="add-new-patient-form-title">Epinephrine Dose</h2>
+        <h2 className="alert-form-title">Epinephrine Dose</h2>
         <div
               style={{
                 textAlign: "start",
