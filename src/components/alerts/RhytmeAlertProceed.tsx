@@ -73,9 +73,9 @@ function RhytmeAlertProceed() {
             )}
 
             {showForm == "yes" && (
-              <div className="yes-proceed">
-                <label htmlFor="procedure"> Rhythm</label>
-                <select id="procedure" name="procedure" required style={{width:"50%"}}>
+              <div className="formInputs-proceed">
+                <label htmlFor="rhythm"> Rhythm</label>
+                <select id="rhythm" name="rhythm" required style={{width:"50%"}}>
                   <option value=" "></option>
                 </select>
               </div>

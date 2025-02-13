@@ -10,7 +10,7 @@ function AmiodaroneAlert({ closeModal }: ModelProps) {
       >
         <h2 className="alert-form-title">Amiodarone</h2>
 
-        <div className="yes-proceed">
+        <div className="formInputs-proceed">
           <label htmlFor="procedure"> Route</label>
           <select
             id="procedure"

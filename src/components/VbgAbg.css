@@ -59,7 +59,7 @@
 .Cause {
   position: relative;
   height: 50px;
-
+  font-weight: 600;
   border: 2px solid #00a6c9;
 
 }
@@ -296,14 +296,12 @@ label {
     width: 100%;
   }
 
-  .button-container {
-    justify-content: center;
-  }
+  
 
   .cancel-button,
   .submit-button {
     width: 100%;
-    max-width: none;
+   
   }
 }
 
@@ -312,15 +310,16 @@ label {
     font-size: 20px;
     margin-bottom: 15px;
   }
-.Cause , .Cause input{
- height: 30px;
- font-size: 13px;
- font-weight: 600;
-}
+  .Cause , .Cause input{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+   
+  }
 
   .form-column {
     gap: 5px;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .form-grid {
   
@@ -333,4 +332,21 @@ label {
   .submit-button {
     height: 32px;
   }
+  .custom-checkbox{
+    max-width: 60%;
+  }
+}
+
+
+@media (max-width: 380px) {
+
+.Cause , .Cause input{
+  
+  font-size: 12px;
+  
+  width: 140px;
+}
+.centent-modal{
+  padding: 0px 10px 20px;
+}
 }
